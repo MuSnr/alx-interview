@@ -20,3 +20,11 @@ if __name__ == "__main__":
             print("[{}]".format(",".join([str(x) for x in row])))
 
     print_triangle(pascal_triangle(5))
+
+# Additional test cases
+print_triangle(pascal_triangle(0))  # Expected output: []
+print_triangle(pascal_triangle(1))  # Expected output: [1]
+print_triangle(pascal_triangle(2))  # Expected output: [1], [1, 1]
+print_triangle(pascal_triangle(3))  # Expected output: [1], [1, 1], [1, 2, 1]
+print_triangle(pascal_triangle(4))  # Expected output: [1], [1, 1], [1, 2, 1], [1, 3, 3, 1]
+print_triangle(pascal_triangle(5))  # Expected output: [1], [1, 1], [1, 2, 1], [1, 3, 3, 1], [1, 4, 6, 4, 1]
